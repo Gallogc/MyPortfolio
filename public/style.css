@@ -1,0 +1,50 @@
+body {
+    background-color: #242424;
+    background-image: url('img/portfolio-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+#portfolio-image {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+#navigation, 
+#navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center; 
+}
+
+#navigation li {
+    margin-top: 20px;
+}
+
+#navigation a {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    max-width: 60ch;
+    text-align: center;
+    margin: 0 auto;       
+    text-align: center;
+}
