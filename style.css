@@ -98,7 +98,7 @@ p {
 #div-home{
     margin: 0 auto;
     width: 300px;
-    height: 50px;
+    height: 100px;
 }
 
 #home{
@@ -120,11 +120,46 @@ p {
 }
 
 #about-me{
+    display: none;
+    isolation: isolate;
+    position: relative;
+    border-radius: 15px;
+    min-height: 200px;
+    max-width: 700px; 
+    height: auto;
+    width: 50%; 
+    margin: 20px auto;
+    padding: 30px;
+    overflow-wrap: break-word;
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#about-me::before {
+    content: "";
+    top: 0; left: 0; right: 0; bottom: 0;
+    position: absolute;
     background-image: url('/img/portfolio-background.jpg');
     background-size: cover;
-    filter: invert(1) brightness(1);
+    filter: invert(1) brightness(0.9);
     border-radius: 15px;
-    height: 700px; 
-    width: 50%; 
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    #about-me {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+#button-aboutme{
+    padding: 0.5%;
+    font-size: medium;
+    border-radius: 40%;
+    border: 1px solid blanchedalmond;
+    cursor: pointer;
+    display: block;
     margin: 0 auto;
 }
