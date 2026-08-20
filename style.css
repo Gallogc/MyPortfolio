@@ -140,7 +140,7 @@ p {
     content: "";
     top: 0; left: 0; right: 0; bottom: 0;
     position: absolute;
-    background-image: url('/img/portfolio-background.jpg');
+    background-image: url('img/portfolio-background.jpg');
     background-size: cover;
     filter: invert(1) brightness(0.9);
     border-radius: 15px;
