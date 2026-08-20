@@ -144,7 +144,12 @@ p {
     background-size: cover;
     filter: invert(1) brightness(0.9);
     border-radius: 15px;
-    z-index: -1;
+    z-index: 0;
+}
+
+#about-me > div {
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 600px) {
