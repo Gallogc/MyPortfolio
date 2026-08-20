@@ -29,6 +29,7 @@ Il sito è visitabile direttamente tramite GitHub Pages:
 
 - **HTML5** — struttura delle pagine
 - **CSS3** — stile e layout
+- **JS** — logica bottoni
 
 ---
 
