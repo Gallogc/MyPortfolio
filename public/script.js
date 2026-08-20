@@ -1,0 +1,30 @@
+function buttonclick() {
+  document.getElementById("button-aboutme").addEventListener("click", function () {
+    
+    const aboutDiv = document.getElementById("about-me");
+
+    aboutDiv.style.display = "block";
+    aboutDiv.innerHTML = "";
+    
+    const newDiv = document.createElement('div');
+
+    newDiv.textContent = `I was born in Pavia, and if I had to tell the story of how I became who I am today, I'd have to start with an old computer and my older brother.
+
+As a kid, I used to watch him for hours. He'd sit down in front of that PC, and I'd just stand there in silence, watching him tinker with it with a kind of ease that seemed like pure magic to me. I didn't understand what he was doing, To me, as a child, everything that came out of that screen was both incredibly strange and fascinating at the same time: programs that came to life out of nowhere, solutions to problems I didn't even know existed. Without realizing it, my brother planted a seed in me that, over time, grew into something much bigger than simple curiosity.
+
+That seed has now become a real passion. I'm studying computer science in high school, and every day that passes I realize more and more that this isn't just a school subject, but the direction I want my life to take. I won't hide the fact that I have clear ambitions: when I grow up, I'd like a job that satisfies me first and foremost on a moral level — one that makes me feel useful, fulfilled, proud of what I do every morning when I wake up. But I'd be a hypocrite if I said the financial side didn't matter at all. As I always say: "money doesn't buy happiness, but money buys happiness." It sounds like a play on words, but to me it captures a simple truth: I don't want to chase only a paycheck, but I also don't want to fool myself into thinking money is irrelevant. I want real balance, not a compromise that sells me short.
+
+And then there's a more personal dream, almost in contrast with the fast-paced world of technology: someday I'd like to have my own ranch. A place all my own, far from the chaos, where I can live in peace surrounded by my animals. I picture myself surrounded by a whole bunch of goats, taking care of them, breathing clean air, finding that peace of mind that sometimes feels impossible to find in everyday life. It's not a contradiction — to me it's complementary: on one side, a mind that works, creates, solves problems; on the other, a simple and genuine refuge where I can truly unplug.
+
+Sport is another fundamental part of who I am. I go to the gym and practice karate, two disciplines that have taught me discipline, consistency, and respect — both for myself and for others. My goal for the future is to manage, as well as possible, three pillars of my life: sport, work, and social relationships. I don't want any one of these to overshadow the others: I want to find that balance that lets me grow professionally without ever giving up training my body, and without losing sight of the people who matter.
+
+Speaking of people: I don't need to surround myself with lots of superficial acquaintances. I'd rather have few people, but real ones. People I trust, who I can count on in hard times and with whom I can share the good ones without any filters. Quality, to me, always beats quantity — in friendships and in every other area of life.
+
+If I had to sum it all up in one sentence, it would be this: I want to LIVE my life to the fullest of my potential. Never settle, never leave anything untried, always give my best in whatever I do — whether it's writing code, training at the gym, nurturing a friendship, or, one day, taking care of my goats on a ranch of my own. This is who I am, and this is who I want to become.`;
+
+    
+    document.getElementById("about-me").appendChild(newDiv);
+  });
+}
+
+buttonclick();
