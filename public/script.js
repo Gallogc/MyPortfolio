@@ -1,14 +1,15 @@
 function buttonclick() {
-  document.getElementById("button-aboutme").addEventListener("click", function () {
-    
-    const aboutDiv = document.getElementById("about-me");
+  const btnAboutMe = document.getElementById("button-aboutme");
+  if (btnAboutMe) {
+    btnAboutMe.addEventListener("click", function () {
 
-    aboutDiv.style.display = "block";
-    aboutDiv.innerHTML = "";
-    
-    const newDiv = document.createElement('div');
+      const aboutDiv = document.getElementById("about-me");
+      aboutDiv.style.display = "block";
+      aboutDiv.innerHTML = "";
 
-    newDiv.textContent = `I was born in Pavia, and if I had to tell the story of how I became who I am today, I'd have to start with an old computer and my older brother.
+      const newDiv = document.createElement('div');
+
+      newDiv.textContent = `I was born in Pavia, and if I had to tell the story of how I became who I am today, I'd have to start with an old computer and my older brother.
 
 As a kid, I used to watch him for hours. He'd sit down in front of that PC, and I'd just stand there in silence, watching him tinker with it with a kind of ease that seemed like pure magic to me. I didn't understand what he was doing, To me, as a child, everything that came out of that screen was both incredibly strange and fascinating at the same time: programs that came to life out of nowhere, solutions to problems I didn't even know existed. Without realizing it, my brother planted a seed in me that, over time, grew into something much bigger than simple curiosity.
 
@@ -22,9 +23,16 @@ Speaking of people: I don't need to surround myself with lots of superficial acq
 
 If I had to sum it all up in one sentence, it would be this: I want to LIVE my life to the fullest of my potential. Never settle, never leave anything untried, always give my best in whatever I do — whether it's writing code, training at the gym, nurturing a friendship, or, one day, taking care of my goats on a ranch of my own. This is who I am, and this is who I want to become.`;
 
-    
-    document.getElementById("about-me").appendChild(newDiv);
-  });
+      aboutDiv.appendChild(newDiv);
+    });
+  }
 }
 
 buttonclick();
+
+const menuToggle = document.getElementById('menu-toggle');
+if (menuToggle) {
+  menuToggle.addEventListener('click', function () {
+    document.getElementById('menu-list').classList.toggle('open');
+  });
+}

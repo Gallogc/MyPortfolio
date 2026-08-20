@@ -4,25 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+          
     <title>My Portfolio</title>
   </head>
-  <body>
+  <div>
     <img
       id="portfolio-image"
       src="img/myportfolioimage.jpg"
       alt="My Portfolio Image"
     />
 
-    <ul id="navigation">
-      <li><a href="#about">○ About Me</a></li>
-      <li><a href="#projects">○ Projects</a></li>
-      <li><a href="#future">○ Future Projects</a></li>
-      <li><a href="#extra">○ Extra</a></li>
-      <li><a href="#contact">○ Contact Me</a></li>
-    </ul>
-
     <br><br>
-    <hr color="white" width="50%" />
+    <section id="me">
+      <p>▶ 18 y/o 👦🏻​<br>▶ Aspiring Developer ​🧑‍💻​<br>▶ Italy ​🍕​</p>
+    </section>
+
+    
+    <nav id="navigation">
+      <button id="menu-toggle" aria-label="Open Menu">☰</button>
+    <ul id="menu-list">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#future">Future Projects</a></li>
+      <li><a href="#extra">Extra</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+    
+    </nav>
+    <br><br>
+    <hr color="white" width="80%" />
 
     <h2 id="about">About Me</h2>
     <p>
@@ -33,7 +46,24 @@
     </p>
 
     <br><br>
-    <hr color="white" width="50%" />
+    <hr color="white" width="70%" />
+
+    <h2 id="skill">Skills</h2>
+    <p>For Now I'm Learning those languages: </p>
+    <div id="badge">
+      <i class="devicon-html5-plain-wordmark colored"></i>
+      <i class="devicon-css3-plain-wordmark colored"></i>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-java-plain-wordmark colored"></i>
+    </div>
+
+    <h4>I'm only 17, I'll be able to acquire more skills than I have now.</h4>
+
+    <br><br>
+
+    <hr color="white" width="60%">
+
+          
 
     <h2 id="projects">Projects</h2>
     <p>
@@ -41,7 +71,7 @@
       time.
     </p>
 
-    <h3>Pong Game</h3>
+    <h3>Pong Game in <i class="devicon-java-plain-wordmark colored" style="font-size: 150%;"></i></h3>
     <div id="project-container">
       <div id="project-style">
         <img
@@ -61,32 +91,38 @@
     <br><br>
     <hr color="white" width="50%" />
 
-    <h2 id="future">Future Projects</h2>
-    <p>I don't know yet what I will do in the future, but I have some ideas. 
-        Maybe I can continue studying in an ITS and achieve some certifications that can improve my CV.
-        Less likely, I could study at university and get a degree in computer science.
-        But for sure I really want to work abroad, because its obviously, I will earn more but my life will be better and full of opportunities.
-        In Conclusion, we will see what the future deserves me. STAY TUNED!</p>
-    </p>
-
+    <h2>Future Projects</h2>
+    <div class="code-block" id="future">
+      <p class="code-line">I don't know yet what I will do in the future, but I have some ideas.</p>
+      <p class="code-line">Maybe I can continue studying in an ITS and achieve some certifications that can improve my CV.</p>
+      <p class="code-line">Less likely, I could study at university and get a degree in computer science.</p>
+      <p class="code-line">But for sure I really want to work abroad, because its obviously, I will earn more but my life will be better and full of opportunities.</p>
+      <p class="code-line">In Conclusion, we will see what the future deserves me. STAY TUNED!</p>
+    </div>
+      
     <br><br>
-    <hr color="white" width="50%" />
+    <hr color="white" width="40%" />
 
-    <h2 id="extra">- Extra</h2>
-    <p>Here you can find some extra information about me! <br><a href="public/Aboutme.html"  id= "notes">More Details</a></p>
+    <h2 id="extra">Extra</h2>
+    <p>Here you can find some extra information about me! <br><a href="public/Aboutme.html"  id= "detail">More Details</a></p>
    
 
     <br><br>
-    <hr color="white" width="50%" />  
+    <hr color="white" width="30%" />  
 
     <h2 id="contact">Contact Me</h2>
     <p>Return 0. Our journey ends here, don't be afraid to contact me!</p>
 
     <br><br>
     <p id="contact">
-        <a href="mailto:gabrigc2509@gmail.com">Email</a> |
-        <a href="https://github.com/Gallogc">GitHub</a>
+        <a href="mailto:gabrigc2509@gmail.com"><i class="fa-solid fa-envelope" ></i> Email</a> |
+        <a href="https://github.com/Gallogc"><i class="fa-brands fa-github"></i> GitHub</a>
     </p>
       
+
+    <script src="public/script.js"></script>
+
+    <br><br>
+    <footer><p>Gabriele Gallo 2026.  Made with HTML, CSS & JS</p></footer>
   </body>
 </html>
